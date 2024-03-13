@@ -125,3 +125,17 @@ http://localhost:3000
   ![Search](/public/screeenshots/search.png)
 - Toggle the columns to view in the table
   ![View](/public/screeenshots/toggle-cols.png)
+
+## Responsive design
+
+Some of the mobile screen screenshots
+
+![mobile home](/public/screeenshots/mobile-view.png)
+![mobile calendar](/public/screeenshots/mobile-calender.png)
+
+---
+
+Tech stack
+- React (js)
+- Tailwindcss
+- shaadcn components
