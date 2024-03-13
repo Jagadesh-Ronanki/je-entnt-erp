@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# ERP System with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Simplified ERP System with React! This project aims to provide a user-friendly interface for managing basic business operations efficiently. It utilizes React for building modular components and managing application state.
 
-## Available Scripts
+**Assignment Details**
+<details>
+  <summary>Overview</summary>
+    
+  ### Dashboard
 
-In the project directory, you can run:
+  - Display a summary of key metrics or features.
+  - Include links or buttons for quick navigation to the Products and Orders management pages.
 
-### `npm start`
+  ### Products Management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - Present a list of products with details such as name, category, price, and stock quantity, using mock data.
+  - Enable functionalities to add, edit, and delete products.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ### Orders Management
 
-### `npm test`
+  - Show a list of orders, including details like order ID, customer name, order date, and status, using mock data.
+  - (Optional) Allow viewing of order details, updating the order status, and deletion of orders.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ### Orders Calendar View (Optional)
 
-### `npm run build`
+  - Implement a calendar view that displays orders on their expected delivery dates.
+  - Provide the ability to click on a date to view all orders due for delivery that day.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ## Technology Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - **React**: Front-end library for building user interfaces.
+  - **React Router**: For implementing navigation within the application.
+  - **CSS**: For styling the components.
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Objectives</summary>
 
-### `npm run eject`
+  - Develop a user-friendly interface for managing key aspects of a business.       
+  - Utilize React for building modular components and managing application state.
+  - Implement navigation between different sections of the ERP system using React Router.
+  - Create a responsive design suitable for both desktop and mobile devices.
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Submission
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Hosted on GitHub: [ERP System React](https://github.com/Jagadesh-Ronanki/je-entnt-erp)
+Deployed on Vercel: [ERP System React Live](https://je-entnt-erp.vercel.app/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Overview
 
-## Learn More
+The system consists of the following pages:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Dashboard**: Provides an overview of key metrics or features.
+2. **Products Management**: Allows for the management of product listings.
+3. **Orders Management**: Facilitates viewing and handling orders.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Additionally, a feature is implemented in orders page:
 
-### Code Splitting
+- **Orders Calendar View**: A calendar interface displaying orders based on their expected delivery dates.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Documentation
 
-### Analyzing the Bundle Size
+### Setup Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Clone the repository: 
+```bash
+git clone <repository-url>
+```
+Navigate to the project directory: 
+```bash
+cd erp-system-react
+```
+Install dependencies: 
+```bash
+npm install
+```
+Start the development server: 
+```bash
+npm start
+```
+Frontend application is accessed by visiting
+```
+http://localhost:3000
+```
 
-### Making a Progressive Web App
+### Interacting with the Website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Upon running the application, you'll land on the dashboard displaying key metrics.
+  ![Dashboard](/public/screeenshots/dashboard-dark.png)
 
-### Advanced Configuration
+  - Navigate between the pages from the nav-links on top or from navbar 
+  - Switch between the light/dark themes from the toggle icon on top right corner
+  ![Light-Theme](/public/screeenshots/theme.png)
+  
+- In Products Management, you can add, edit, and delete products.
+  - Product Management Page
+  ![Products page](/public/screeenshots/products.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  - Add Product
+  ![Add Product](/public/screeenshots/add-product.png)
 
-### Deployment
+  - Edit Product
+  ![Edit Product](/public/screeenshots/edit-product.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- In Orders Management, you can view orders and optionally update their status or delete them.
+  - Order Management Page
+    ![Orders page](/public/screeenshots/orders.png)
 
-### `npm run build` fails to minify
+  - Add Order
+  ![Add Order](/public/screeenshots/add-order.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - Edit Order
+  ![Edit Order](/public/screeenshots/edit-order.png)
+
+  - Use the status filter present at the side of search bar. This filters out the orders based on the status
+  ![Filter](/public/screeenshots/filter-status.png)
+
+  - The Orders Calendar View can be accessed through a switch labeled *calender view*. You are able to choose a date and the orders are displayed on the screen according to the delivery date
+  ![Calendar View](/public/screeenshots/calendar-view.png)
+  
+
+- Can use search to filter the products & orders
+  ![Search](/public/screeenshots/search.png)
+- Toggle the columns to view in the table
+  ![View](/public/screeenshots/toggle-cols.png)
