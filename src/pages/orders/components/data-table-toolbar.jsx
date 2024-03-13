@@ -21,8 +21,8 @@ function DataTableToolbar({ table, setOrders }) {
       <div className="flex flex-1 items-center space-x-2">
         <Input
           placeholder="Filter orders..."
-          value={(table.getColumn("name")?.getFilterValue()) ?? ""}
-          onChange={(event) => table.getColumn("name")?.setFilterValue(event.target.value)}
+          value={(table.getColumn("orderId")?.getFilterValue()) ?? ""}
+          onChange={(event) => table.getColumn("orderId")?.setFilterValue(event.target.value)}
           className="h-8 w-[150px] lg:w-[250px]"
         />
         <div className="hidden md:block lg:block">

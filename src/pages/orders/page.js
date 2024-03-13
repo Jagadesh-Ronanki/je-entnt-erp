@@ -28,7 +28,7 @@ const OrdersPage = () => {
   const handleDelete = (orderId) => {
     setOrders((prevOrders) =>
       prevOrders.filter((order) => {
-        return order.id !== orderId;
+        return order.id !== orderId.original.id;
       })
     );
   };

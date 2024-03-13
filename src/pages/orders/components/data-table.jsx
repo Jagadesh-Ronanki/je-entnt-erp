@@ -1,4 +1,9 @@
+import React, { useState, useMemo } from "react";
 import {
+  ColumnFiltersState,
+  ColumnDef,
+  SortingState,
+  VisibilityState,
   flexRender,
   getCoreRowModel,
   getFacetedRowModel,
@@ -6,9 +11,8 @@ import {
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  useReactTable
+  useReactTable,
 } from "@tanstack/react-table";
-import { useMemo, useState } from "react";
 
 import {
   Table,
@@ -19,16 +23,24 @@ import {
   TableRow,
 } from "../../../components/ui/table";
 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../../../components/ui/card"
 
-import { Calendar } from "lucide-react";
-import { Badge } from "../../../components/ui/badge";
-import { categories, statuses } from "../../../db/data";
+import { Calendar } from "lucide-react"
+import { Badge } from "../../../components/ui/badge"
+import { categories, labels, priorities, statuses } from "../../../db/data"
 
+import { DataTablePagination } from "./data-table-pagation";
+import { DataTableToolbar } from "./data-table-toolbar";
 import { Checkbox } from "../../../components/ui/checkbox";
 import { DataTableColumnHeader } from "./data-table-column-header";
-import { DataTablePagination } from "./data-table-pagation";
 import { DataTableRowActions } from "./data-table-row-actions";
-import { DataTableToolbar } from "./data-table-toolbar";
 
 import OrderDetailsCard from "./order-details-card";
 
@@ -45,7 +57,6 @@ function DataTable({ data, onDelete, onEdit, setOrders }) {
 
   const columns = useMemo(() => {
     const handleEditRow = (orderId, newData) => {
-      console.log("New Data:", newData)
       onEdit(orderId, newData);
     };
 
