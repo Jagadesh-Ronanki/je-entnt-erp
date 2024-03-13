@@ -138,4 +138,4 @@ Some of the mobile screen screenshots
 Tech stack
 - React (js)
 - Tailwindcss
-- shaadcn components
+- shadcn components
